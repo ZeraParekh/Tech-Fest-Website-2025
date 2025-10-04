@@ -1,88 +1,210 @@
 <html>
+<html lang="en">
 <head>
-  <title>Importance of Trees</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importance of Trees - By Zera</title>
   <style>
+    /* * Global Styles & Typography 
+     */
     body {
-      background-color: #a1bfa2;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      text-align: center;
-      max-width: 500px;
-      margin: auto;
-      border: 3px;
-      Border-color: green;
-      border-radius: 15px;
-      
+      background-color: #a1bfa2; /* Light Mint Green Background */
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
     }
+    
+    /* * Main Content Container (Mimics a card) 
+     */
+    .container {
+      max-width: 600px; /* Increased slightly for better mobile/desktop view */
+      margin: 0 auto; /* Center the container */
+      padding: 25px;
+      background-color: #ffffff; /* White card background */
+      border: 3px solid #387c44; /* Forest Green Border */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* * Headings and Text Styles 
+     */
     h1 {
       color: darkgreen;
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #a1bfa2;
+      padding-bottom: 10px;
     }
     h2 {
       color: forestgreen;
+      font-size: 1.5em;
+      margin-top: 20px;
+      border-left: 5px solid forestgreen;
+      padding-left: 10px;
     }
-    p {
+    p, li {
       color: #023800;
       font-size: 18px;
+      margin-bottom: 15px;
     }
-    marquee{
-        color: rgb(97, 125, 34);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        
+
+    /* * Image Styling 
+     */
+    .hero-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: block;
     }
-    img {
-      border-radius: 5px;
-      max-width: 100%;
-      
+
+    /* New style for small floating images on the right */
+    .small-image {
+        width: 120px; /* Adjust size */
+        height: auto;
+        border-radius: 10px;
+        float: right; /* Place it on the right side of the text */
+        margin: 5px 0 15px 15px; /* Spacing around the image */
+        border: 2px solid forestgreen;
+        object-fit: cover;
+    }
+
+    /* * List Styling 
+     */
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* * Tagline/Footer Style 
+     */
+    .tagline {
+      color: #4CAF50; /* Green shade for the dynamic text */
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: 1.2em;
+      padding: 10px 0;
+      font-weight: bold;
     }
     
+    /* * Section Divider Styling 
+     */
+    .section-divider {
+        border: 0;
+        height: 1px;
+        background-color: #ddd; /* Light gray line */
+        margin: 25px 0;
+    }
+
+    /* Utility for clearing floats to maintain layout integrity */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .call-to-action {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .call-to-action h3 {
+        font-size: 2em;
+        color: #C62828; /* Deep red for impact */
+    }
     
   </style>
 </head>
 <body>
 
+  <!-- Main Content Wrapper -->
+  <div class="container">
+    
+    <h1>Importance of Trees</h1>
+    <h12>By Zera</h12>
 
-  <h1>Importance of Trees</h1>
+    <!-- Image -->
+    <img 
+      class="hero-image"
+      src="FINAL.webp" 
+      alt="Trees and nature scene"
+    >
 
+    <!-- Marquee Tagline -->
+    <marquee class="tagline" scrollamount="10">Trees are the lungs of our land</marquee>
 
-  <img 
-  width="700px"
-  height="300px"
-  src="FINAL.webp" 
-  alt="Trees">
+    <!-- Section 1: Why Trees Matter? -->
+    <h2><em>Why Trees Matter?</em></h2>
+    <p>
+      <b style="color: darkgreen;">Trees are essential</b> for life on Earth. 
+      They give us <b>oxygen, food, shade, and help fight climate change.</b>
+    </p>
+    
+    <hr class="section-divider">
 
+    <!-- Section 2: Benefits (Content and Image Wrapper) -->
+    <div class="clearfix">
+        <h2><em>Benefits</em></h2>
+        <img 
+          class="small-image"
+          src="bird in tree.jpg" 
+          alt="Icon showing clean air"
+        >
+        <ul>
+          <li>Clean the air by removing pollution like nitrogen dioxide.</li>
+          <li>Fight climate change by storing carbon dioxide.</li>
+          <li>Provide shelter, nesting, and food for many animals, birds, and insects.</li> 
+          <li>Protect soil from being washed away by rain and make the soil healthier.</li>
+          <li>Help manage water by filtering rain and preventing floods.</li>
+          <li>Keep cities cool by providing shade and releasing water vapor.</li>
+          <li>Give us materials, support health, and make neighborhoods look better.</li>
+        </ul>
+    </div>
+    
+    <hr class="section-divider">
 
-<marquee> Trees are the lungs of our land</marquee>
+    <!-- Section 3: What Can You Do? (Content and Image Wrapper) -->
+    <div class="clearfix">
+        <h2><em>What Can You Do?</em></h2>
+        <img 
+          class="small-image"
+          src="download.png" 
+          alt="Bird in the Tree"
+        >
+        <ul>
+          <li>Plant trees at home or join a community planting event.</li> 
+          <li>Reuse, Recycle and Reduce </li>
+          <li>Water young trees correctly to help them survive during dry times.</li>
+          <li>Talk to friends and family about why saving forests is important.</li>
+          <li>Volunteer or donate to groups that plant and care for trees in your area.</li>
+          <li>Learn to identify local tree types and what they contribute to the environment.</li>
+        </ul>
+    </div>
 
+    <hr class="section-divider">
 
+    <!-- Section 4: Scientific Question -->
+    <h2><em>Why do plants need only a specific amount of water?</em></h2>
+    <p> 
+      It enables fundamental processes like 
+      <b>photosynthesis</b> and transpiration. 
+      Not only that but it supports nutrient uptake 
+      and prevents stress from both drought and 
+      over-saturation.
+    </p>
 
-  <h2><em>Why Trees Matter?</em></h2>
-  <p><b>Trees are essential</b> for life on Earth.</p>
-  <p>They give us <b>oxygen, food, shade, and help fight climate change.</b></p>
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <h3><b>Save Trees, Save Life!</b></h3>
+    </div>
 
-
-  <h2><em>Benefits</em></h2>
-  <p><li>Purify the air</li>
-    <li>Provide shelter for animals</li> 
-    <li>Prevent soil erosion</li>
-    <li>Keep our planet cool</li></p>
-
-
-  <h2><em>What Can You Do?</em></h2>
-  <p><li>Plant more trees</li> 
-    <li>Take care of existing trees</li> 
-     <li>Spread awareness</li></p>
-
-
-	<h2><em>Why do plants need only a specific amount of water?</em></h2>
-	<p> It enables fundamental processes like
-         <b>photosynthesis</b> and transpiration. 
-         Not only that but it supports nutrient uptake 
-         and prevents stress from both drought and 
-         over-saturation.</p>
-
-
-  <h3><b>Save Trees, Save Life!</b></h3>
-
+  </div>
 
 </body>
 </html>
-
